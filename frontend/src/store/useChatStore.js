@@ -75,12 +75,25 @@ export const useChatStore = create((set, get) => ({
         //optimize this later
         const socket = useAuthStore.getState().socket
         socket.on("newMessage", (newMessage) => {
-
-            if(newMessage.senderId!=selectedUser._id) return 
-            set({ messages: [...get().messages, newMessage] })
-
+            // Check if message is from selected user
+            if(newMessage.senderId !== selectedUser._id) return 
+            
+            const currentMessages = get().messages;
+            let isDuplicate = false;
+            
+            // Check if message already exists
+            for(let i = 0; i < currentMessages.length; i++) {
+                if(currentMessages[i]._id === newMessage._id) {
+                    isDuplicate = true;
+                    break;
+                }
+            }
+            
+            // Only add if it's not a duplicate
+            if (!isDuplicate) {
+                set({ messages: [...currentMessages, newMessage] })
+            }
         })
-
     },
     unsubscribeFromMessage: () => {
         const socket = useAuthStore.getState().socket
