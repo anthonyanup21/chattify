@@ -1,12 +1,9 @@
 import React, { useEffect, useRef } from "react";
-import User from "./User";
-import Message from "./Message";
 import { useChatStore } from "../store/useChatStore";
+import { useAuthStore } from "../store/useAuthStore";
 import ChatHeader from "./ChatHeader";
 import MessageInput from "./MessageInput";
 import ChatSkleton from "../skletons/ChatSkleton";
-
-import { useAuthStore } from "../store/useAuthStore.js";
 
 const ChatContainer = () => {
   const {
@@ -21,18 +18,12 @@ const ChatContainer = () => {
 
   const { authUser } = useAuthStore();
   const bottomRef = useRef(null);
+
   useEffect(() => {
     getMessages(selectedUser._id);
-
     subscribeToMessage();
-
     return () => unsubscribeFromMessage();
-  }, [
-    selectedUser._id,
-    getMessages,
-    subscribeToMessage,
-    unsubscribeFromMessage,
-  ]);
+  }, [selectedUser._id, getMessages, subscribeToMessage, unsubscribeFromMessage]);
 
   useEffect(() => {
     if (bottomRef.current) {
@@ -42,7 +33,7 @@ const ChatContainer = () => {
 
   if (isMessagesLoading) {
     return (
-      <div className="h-full w-full flex flex-col justify-between bg-base-300 p-2 rounded-lg">
+      <div className="h-full w-full flex flex-col justify-between bg-base-300 p-2 sm:rounded-lg">
         <ChatHeader />
         <ChatSkleton />
         <MessageInput />
@@ -51,38 +42,28 @@ const ChatContainer = () => {
   }
 
   return (
-    <div className="h-full w-full flex flex-col justify-between bg-base-300 p-2 rounded-lg">
+    <div className="flex flex-col justify-between h-full w-full bg-base-300 p-2 sm:rounded-lg">
       <ChatHeader />
-
-      <div className="flex-1 overflow-y-auto space-y-3 p-2 custom-scrollbar" >
+      <div className="flex-1 overflow-y-auto space-y-4 p-2 sm:p-4 custom-scrollbar">
         {messages.map((message) => (
           <div
             key={message._id}
-            className={`chat ${
-              message.senderId == authUser._id ? "chat-end" : "chat-start"
-            }` }
+            className={`chat ${message.senderId == authUser._id ? "chat-end" : "chat-start"}`}
           >
             <div className="chat-image avatar">
-              <div className="w-10 rounded-full">
+              <div className="w-8 sm:w-10 rounded-full">
                 <img
-                  alt="Tailwind CSS chat bubble component"
-                  src={`${
+                  alt="profile"
+                  src={
                     message.senderId == authUser._id
-                      ? authUser.profilePic ||
-                        "https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
-                      : selectedUser.profilePic ||
-                        "https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
-                  }`}
+                      ? authUser.profilePic || "https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                      : selectedUser.profilePic || "https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                  }
                 />
               </div>
             </div>
-
             <div className="chat-header">
-              {/* {message.senderId == authUser._id
-                ? authUser.fullName
-                : selectedUser.fullName} */}
-
-              <time className="text-xs opacity-50">
+              <time className="text-[10px] sm:text-xs opacity-50">
                 {new Intl.DateTimeFormat("en-US", {
                   hour: "numeric",
                   minute: "numeric",
@@ -90,25 +71,17 @@ const ChatContainer = () => {
                 }).format(new Date(message.createdAt))}
               </time>
             </div>
-            <div className="chat-bubble bg-base-100 rounded-2xl my-1 max-w-xs break-words">
+            <div className="chat-bubble bg-base-100 rounded-2xl my-1 max-w-[200px] sm:max-w-xs break-words">
               {message.image && (
-                <img
-                  src={message.image}
-                  className="w-[200px] rounded-md mb-2"
-                  alt="Image"
-                />
+                <img src={message.image} className="w-[150px] sm:w-[200px] rounded-md mb-2" alt="Sent" />
               )}
-              {message.text && (
-                <p className="whitespace-normal break-words">{message.text}</p>
-              )}
+              {message.text && <p className="whitespace-normal break-words text-sm sm:text-base">{message.text}</p>}
             </div>
-            <div className="chat-footer opacity-50">Delivered</div>
+            <div className="chat-footer opacity-50 text-[10px] sm:text-xs">Delivered</div>
           </div>
         ))}
-
         <div ref={bottomRef}></div>
       </div>
-
       <MessageInput />
     </div>
   );

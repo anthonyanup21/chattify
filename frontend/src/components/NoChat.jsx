@@ -3,15 +3,12 @@ import { RiChat1Fill } from "react-icons/ri";
 
 const NoChat = () => {
   return (
-    <div className="h-full w-full bg-base-300 flex justify-around items-center ">
-      <div>
-        <div className="flex justify-center items-center">
-          <RiChat1Fill size={60} className="animate-bounce" />
-        </div>
-        <h1 className="font-bold text-2xl flex justify-center items-center pt-3 pb-2">Welcome to Chattify!</h1>
-        <p className="text-base-content/60">Select a conversation from the sidebar to </p>
-        <p className="flex justify-center items-center text-base-content/60">start chatting</p>
-      </div>
+    <div className="flex flex-col justify-center items-center h-[50vh] md:h-full w-full bg-base-300 text-center p-6">
+      <RiChat1Fill size={60} className="text-primary animate-bounce mb-4" />
+      <h1 className="text-2xl font-bold">Welcome to Chattify!</h1>
+      <p className="text-base-content/60 mt-2">
+        Select a conversation from the sidebar to start chatting.
+      </p>
     </div>
   );
 };

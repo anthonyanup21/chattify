@@ -10,34 +10,34 @@ const Settings = () => {
     <div >
     <h1 className="text-center mt-10 font-extrabold text-3xl">Themes</h1>
     
-    <div className='class="rounded-box grid grid-cols-2 gap-8 m-50 mt-4 pb-10 mb-0 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5'>
+    <div className='rounded-box grid grid-cols-2 gap-4 mt-4 pb-10 mb-0 px-4 sm:grid-cols-3 sm:gap-6 md:grid-cols-4 md:gap-8 lg:grid-cols-5'>
       
       <div  onClick={()=>{setTheme("light")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="light"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="light"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">light</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">light</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -47,34 +47,34 @@ const Settings = () => {
 
 
       <div  onClick={()=>{setTheme("dark")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="dark"
         data-act-class="outline-base-content!"
       >
         
           <div
             data-theme="dark"
-            class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+            className="bg-base-100 text-base-content w-full font-sans"
           >
-            <div class="grid grid-cols-5 grid-rows-3">
-              <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-              <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-              <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-                <div class="font-bold">dark</div>{" "}
-                <div class="flex flex-wrap gap-1">
-                  <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                    <div class="text-primary-content text-sm font-bold">A</div>
+            <div className="grid grid-cols-5 grid-rows-3">
+              <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+              <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+              <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+                <div className="font-bold">dark</div>{" "}
+                <div className="flex flex-wrap gap-1">
+                  <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                    <div className="text-primary-content text-sm font-bold">A</div>
                   </div>{" "}
-                  <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                    <div class="text-secondary-content text-sm font-bold">
+                  <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                    <div className="text-secondary-content text-sm font-bold">
                       A
                     </div>
                   </div>{" "}
-                  <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                    <div class="text-accent-content text-sm font-bold">A</div>
+                  <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                    <div className="text-accent-content text-sm font-bold">A</div>
                   </div>{" "}
-                  <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                    <div class="text-neutral-content text-sm font-bold">A</div>
+                  <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                    <div className="text-neutral-content text-sm font-bold">A</div>
                   </div>
                 </div>
               </div>
@@ -84,31 +84,31 @@ const Settings = () => {
      
 
       <div  onClick={()=>{setTheme("cupcake")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="cupcake"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="cupcake"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">cupcake</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">cupcake</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -117,31 +117,31 @@ const Settings = () => {
       </div>
 
       <div  onClick={()=>{setTheme("bumblebee")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="bumblebee"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="bumblebee"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">bumblebee</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">bumblebee</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -150,31 +150,31 @@ const Settings = () => {
       </div>
 
       <div  onClick={()=>{setTheme("emerald")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="emerald"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="emerald"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">emerald</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">emerald</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -183,31 +183,31 @@ const Settings = () => {
       </div>
 
       <div  onClick={()=>{setTheme("corporate")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="corporate"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="corporate"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">corporate</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">corporate</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -216,31 +216,31 @@ const Settings = () => {
       </div>
 
       <div onClick={()=>{setTheme("synthwave")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="synthwave"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="synthwave"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">synthwave</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">synthwave</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -249,31 +249,31 @@ const Settings = () => {
       </div>
 
       <div onClick={()=>{setTheme("retro")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="retro"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="retro"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">retro</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">retro</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -282,31 +282,31 @@ const Settings = () => {
       </div>
 
       <div onClick={()=>{setTheme("cyberpunk")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="cyberpunk"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="cyberpunk"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">cyberpunk</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">cyberpunk</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -315,31 +315,31 @@ const Settings = () => {
       </div>
 
       <div onClick={()=>{setTheme("valentine")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="valentine"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="valentine"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">valentine</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">valentine</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -348,31 +348,31 @@ const Settings = () => {
       </div>
 
       <div onClick={()=>{setTheme("halloween")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="halloween"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="halloween"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">halloween</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">halloween</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -381,31 +381,31 @@ const Settings = () => {
       </div>
 
       <div onClick={()=>{setTheme("garden")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="garden"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="garden"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">garden</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">garden</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -414,31 +414,31 @@ const Settings = () => {
       </div>
 
       <div onClick={()=>{setTheme("forest")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="forest"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="forest"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">forest</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">forest</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -447,31 +447,31 @@ const Settings = () => {
       </div>
 
       <div onClick={()=>{setTheme("aqua")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="aqua"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="aqua"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">aqua</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">aqua</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -480,31 +480,31 @@ const Settings = () => {
       </div>
 
       <div onClick={()=>{setTheme("lofi")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="lofi"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="lofi"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">lofi</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">lofi</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -513,31 +513,31 @@ const Settings = () => {
       </div>
 
       <div onClick={()=>{setTheme("pastel")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="pastel"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="pastel"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">pastel</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">pastel</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -546,31 +546,31 @@ const Settings = () => {
       </div>
 
       <div onClick={()=>{setTheme("fantasy")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="fantasy"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="fantasy"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">fantasy</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">fantasy</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -579,31 +579,31 @@ const Settings = () => {
       </div>
 
       <div  onClick={()=>{setTheme("wireframe")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="wireframe"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="wireframe"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">wireframe</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">wireframe</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -612,31 +612,31 @@ const Settings = () => {
       </div>
 
       <div  onClick={()=>{setTheme("black")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="black"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="black"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">black</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">black</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -645,31 +645,31 @@ const Settings = () => {
       </div>
 
       <div  onClick={()=>{setTheme("luxury")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="luxury"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="luxury"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">luxury</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">luxury</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -678,31 +678,31 @@ const Settings = () => {
       </div>
 
       <div  onClick={()=>{setTheme("dracula")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="dracula"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="dracula"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">dracula</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">dracula</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -711,31 +711,31 @@ const Settings = () => {
       </div>
 
       <div  onClick={()=>{setTheme("cmyk")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="cmyk"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="cmyk"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">cmyk</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">cmyk</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -744,31 +744,31 @@ const Settings = () => {
       </div>
 
       <div  onClick={()=>{setTheme("autumn")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="autumn"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="autumn"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">autumn</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">autumn</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -777,31 +777,31 @@ const Settings = () => {
       </div>
 
       <div  onClick={()=>{setTheme("business")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="business"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="business"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">business</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">business</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -810,31 +810,31 @@ const Settings = () => {
       </div>
 
       <div  onClick={()=>{setTheme("acid")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="acid"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="acid"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">acid</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">acid</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -843,31 +843,31 @@ const Settings = () => {
       </div>
 
       <div  onClick={()=>{setTheme("lemonade")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="lemonade"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="lemonade"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">lemonade</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">lemonade</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -876,31 +876,31 @@ const Settings = () => {
       </div>
 
       <div  onClick={()=>{setTheme("night")}} 
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="night"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="night"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">night</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">night</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -909,31 +909,31 @@ const Settings = () => {
       </div>
 
       <div  onClick={()=>{setTheme("coffee")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="coffee"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="coffee"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">coffee</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">coffee</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -942,31 +942,31 @@ const Settings = () => {
       </div>
 
       <div  onClick={()=>{setTheme("winter")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="winter"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="winter"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">winter</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">winter</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -975,31 +975,31 @@ const Settings = () => {
       </div>
 
       <div  onClick={()=>{setTheme("dim")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="dim"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="dim"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">dim</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">dim</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -1008,31 +1008,31 @@ const Settings = () => {
       </div>
 
       <div  onClick={()=>{setTheme("nord")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="nord"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="nord"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">nord</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">nord</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -1041,31 +1041,31 @@ const Settings = () => {
       </div>
 
       <div  onClick={()=>{setTheme("sunset")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="sunset"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="sunset"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">sunset</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">sunset</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -1074,31 +1074,31 @@ const Settings = () => {
       </div>
 
       <div  onClick={()=>{setTheme("caramellatte")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="caramellatte"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="caramellatte"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">caramellatte</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">caramellatte</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -1107,31 +1107,31 @@ const Settings = () => {
       </div>
 
       <div  onClick={()=>{setTheme("abyss")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="abyss"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="abyss"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">abyss</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">abyss</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>
@@ -1140,31 +1140,31 @@ const Settings = () => {
       </div>
 
       <div  onClick={()=>{setTheme("silk")}}
-        class="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent"
+        className="border-base-content/20 hover:border-base-content/40 overflow-hidden rounded-lg border outline-2 outline-offset-2 outline-transparent cursor-pointer"
         data-set-theme="silk"
         data-act-class="outline-base-content!"
       >
         <div
           data-theme="silk"
-          class="bg-base-100 text-base-content w-full cursor-pointer font-sans"
+          className="bg-base-100 text-base-content w-full font-sans"
         >
-          <div class="grid grid-cols-5 grid-rows-3">
-            <div class="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
-            <div class="bg-base-300 col-start-1 row-start-3"></div>{" "}
-            <div class="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
-              <div class="font-bold">silk</div>{" "}
-              <div class="flex flex-wrap gap-1">
-                <div class="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-primary-content text-sm font-bold">A</div>
+          <div className="grid grid-cols-5 grid-rows-3">
+            <div className="bg-base-200 col-start-1 row-span-2 row-start-1"></div>{" "}
+            <div className="bg-base-300 col-start-1 row-start-3"></div>{" "}
+            <div className="bg-base-100 col-span-4 col-start-2 row-span-3 row-start-1 flex flex-col gap-1 p-2">
+              <div className="font-bold">silk</div>{" "}
+              <div className="flex flex-wrap gap-1">
+                <div className="bg-primary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-primary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-secondary-content text-sm font-bold">A</div>
+                <div className="bg-secondary flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-secondary-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-accent-content text-sm font-bold">A</div>
+                <div className="bg-accent flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-accent-content text-sm font-bold">A</div>
                 </div>{" "}
-                <div class="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
-                  <div class="text-neutral-content text-sm font-bold">A</div>
+                <div className="bg-neutral flex aspect-square w-5 items-center justify-center rounded lg:w-6">
+                  <div className="text-neutral-content text-sm font-bold">A</div>
                 </div>
               </div>
             </div>

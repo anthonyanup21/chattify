@@ -47,33 +47,30 @@ const Login = () => {
     return (
 
         <form onSubmit={handleSubmit}>
-            <div className='flex justify-center items-center max-w-screen h-screen overflow-hidden '>
-                <div className='space-y-6 md:pb-13 md:px-15 md:pt-13 rounded-3xl bg-base-300 p-10 pb-14 max-w-full'>
-                    <h1 className='text-center text-4xl font-extrabold'>Login!</h1>
+            <div className='flex justify-center items-center min-h-screen overflow-y-auto p-4'>
+                <div className='space-y-6 rounded-3xl bg-base-300 p-6 sm:p-8 md:p-10 max-w-sm w-full'>
+                    <h1 className='text-center text-3xl sm:text-4xl font-extrabold'>Login!</h1>
 
-                    <label className="input input-bordered  flex items-center gap-2  w-full md:w-[15rem] h-[3rem] rounded-2xl ">
+                    <label className="input input-bordered flex items-center gap-2 w-full h-[3rem] rounded-2xl">
                         <MdEmail size={17} />
-
                         <input type="text" className="grow" name="email" placeholder="Email" value={formData.email} onChange={(e) => {
                             setformData({ ...formData, email: e.target.value })
                         }} />
                     </label>
-                    <label className="input input-bordered flex items-center gap-2 w-full md:w-[15rem] h-[3rem] rounded-2xl">
+                    <label className="input input-bordered flex items-center gap-2 w-full h-[3rem] rounded-2xl">
                         <FaKey />
-
                         <input type={showPassword ? "text" : "password"} className="grow" name="password" placeholder='Password' value={formData.password} onChange={(e) => {
                             setformData({ ...formData, password: e.target.value })
                         }} />
-                        <div className='cursor-pointer ' onClick={() => { setshowPassword(!showPassword) }}>
+                        <div className='cursor-pointer p-1' onClick={() => { setshowPassword(!showPassword) }}>
                             {showPassword ? <FaEye size={17} /> : <FaEyeSlash size={17} />}
                         </div>
                     </label>
-                    <button className="btn btn-active btn-primary  md:w-[15rem]  w-full  h-[3rem] rounded-2xl font-extrabold ">
-
+                    <button className="btn btn-active btn-primary w-full h-[3rem] rounded-2xl font-extrabold">
                         {isLoggingIn ? <span className="loading loading-dots loading-xl"></span> : "Login"}
                     </button>
 
-                    <p className='text-center text-[13px]'>Don't have an account ? <span className='text-[#5754E8] underline cursor-pointer'><Link to="/signup">Signup</Link></span></p>
+                    <p className='text-center text-sm'>Don't have an account ? <span className='text-primary underline cursor-pointer'><Link to="/signup">Signup</Link></span></p>
 
 
 
